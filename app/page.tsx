@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen p-8 sm:p-20 bg-gray-900 text-white">
+    <div className="flex flex-col items-center justify-center min-h-screen p-8 sm:p-20 bg-black text-white">
       {/* Header */}
       <header className="w-full flex justify-between items-center max-w-6xl py-4">
         <Image src="/aphelion.svg" alt="Aphelion Logo" width={150} height={50} />
@@ -52,7 +52,6 @@ export default function Home() {
   );
 }
 
-  );
-}
+
 
 
