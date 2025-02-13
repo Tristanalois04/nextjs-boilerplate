@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-black text-white">
+    <div className="bg-black text-white">
       {/* Header con video de fondo */}
       <header className="relative w-full h-[400px]">
         <video autoPlay loop muted className="absolute inset-0 object-cover w-full h-full">
@@ -19,27 +19,37 @@ export default function Home() {
         </div>
       </header>
 
-      {/* Sección Hero */}
-      <main className="flex flex-col items-center text-center gap-6 mt-16 max-w-4xl px-4">
-        <h1 className="text-4xl sm:text-6xl font-bold">Transforming Industrial Vision</h1>
-        
-        {/* Texto con la alineación e indentación solicitada */}
-        <p className="text-lg sm:text-xl text-gray-300 text-left leading-relaxed whitespace-pre-line px-6">
-{`<< We specialize in developing visual concepts that enable industrial companies to bring their ideas and products to life, transforming complex projects into clear, actionable solutions.
+      {/* Sección Hero con alineación tipo la imagen */}
+      <main className="max-w-6xl mx-auto mt-16 px-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
+          {/* Columna izquierda: título */}
+          <div>
+            <h2 className="text-2xl sm:text-3xl font-semibold mb-2">Our Mission</h2>
+            <h1 className="text-4xl sm:text-6xl font-bold">
+              Transforming Industrial Vision
+            </h1>
+          </div>
 
-Our approach optimizes technical and internal communication and creates a professional impact that facilitates investor attraction and enhances the value of each industrial proposal..`}
-        </p>
-
-        <a
-          href="#services"
-          className="bg-blue-600 px-6 py-3 rounded-lg text-lg font-semibold hover:bg-blue-500"
-        >
-          Explore Our Services
-        </a>
+          {/* Columna derecha: texto descriptivo */}
+          <div>
+            <p className="text-lg sm:text-xl text-gray-300 leading-relaxed">
+              We specialize in developing visual concepts that enable industrial companies to bring their ideas and products to life, transforming complex projects into clear, actionable solutions.
+            </p>
+            <p className="text-lg sm:text-xl text-gray-300 leading-relaxed mt-4">
+              Our approach optimizes technical and internal communication and creates a professional impact that facilitates investor attraction and enhances the value of each industrial proposal..
+            </p>
+            <a
+              href="#services"
+              className="inline-block bg-blue-600 px-6 py-3 rounded-lg text-lg font-semibold hover:bg-blue-500 mt-6"
+            >
+              Explore Our Services
+            </a>
+          </div>
+        </div>
       </main>
 
       {/* Sección de Servicios */}
-      <section id="services" className="w-full max-w-6xl mt-24 text-center px-4">
+      <section id="services" className="w-full max-w-6xl mt-24 text-center px-4 mx-auto">
         <h2 className="text-3xl font-semibold mb-6">Our Services</h2>
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-8">
           <div className="p-6 bg-gray-800 rounded-lg">
