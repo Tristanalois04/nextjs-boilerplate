@@ -23,8 +23,12 @@ export default function Home() {
       <main className="flex flex-col items-center text-center gap-6 mt-16 max-w-4xl px-4">
         <h1 className="text-4xl sm:text-6xl font-bold">Transforming Industrial Vision</h1>
         <p className="text-lg sm:text-xl text-gray-300">
-          Aphelion provides cutting-edge visual solutions for the industrial sector, 
-          making complex projects clear and effective.
+          Aphelion provides cutting-edge visual solutions for the industrial sector, making complex projects clear and effective.
+        </p>
+        <p className="text-lg sm:text-xl text-gray-300">
+          We specialize in developing visual concepts that enable industrial companies to bring their ideas and products to life, transforming complex projects into clear, actionable solutions.
+          <br /><br />
+          Our approach optimizes technical and internal communication and creates a professional impact that facilitates investor attraction and enhances the value of each industrial proposal.
         </p>
         <a href="#services" className="bg-blue-600 px-6 py-3 rounded-lg text-lg font-semibold hover:bg-blue-500">
           Explore Our Services
