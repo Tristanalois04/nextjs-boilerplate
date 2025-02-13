@@ -36,9 +36,9 @@ export default function Home() {
               </a>
             </nav>
 
-            {/* Botón reemplazado por imagen (boton.svg) */}
+            {/* Botón reemplazado por imagen (boton.svg) con tamaño incrementado en 20% */}
             <a href="#design">
-              <Image src="/boton.svg" alt="Design your technology" width={150} height={40} />
+              <Image src="/boton.svg" alt="Design your technology" width={180} height={48} />
             </a>
           </div>
         </div>
@@ -118,4 +118,3 @@ export default function Home() {
     </div>
   );
 }
-
