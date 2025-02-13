@@ -5,7 +5,7 @@ export default function Home() {
     <div className="flex flex-col items-center justify-center min-h-screen p-8 sm:p-20 bg-gray-900 text-white">
       {/* Header */}
       <header className="w-full flex justify-between items-center max-w-6xl py-4">
-        <Image src="/logo-aphelion.svg" alt="Aphelion Logo" width={150} height={50} />
+        <Image src="/aphelion.svg" alt="Aphelion Logo" width={150} height={50} />
         <nav className="hidden sm:flex gap-6">
           <a href="#services" className="hover:text-gray-400">Services</a>
           <a href="#about" className="hover:text-gray-400">About</a>
@@ -51,5 +51,4 @@ export default function Home() {
     </div>
   );
 }
-
 
