@@ -3,9 +3,9 @@ import Image from "next/image";
 export default function Home() {
   return (
     <div className="bg-black text-white min-h-screen">
-      {/* Encabezado: Barra de navegación en negro */}
+      {/* Encabezado: Barra de navegación en negro con outline blanco */}
       <header>
-        <div className="bg-black w-full py-4 border-b border-gray-800">
+        <div className="bg-black w-full py-4 border-b border-gray-800 outline outline-1 outline-white">
           <div className="w-4/5 mx-auto flex items-center justify-between px-4">
             {/* Logo a la izquierda */}
             <div className="flex items-center">
@@ -118,3 +118,4 @@ export default function Home() {
     </div>
   );
 }
+
