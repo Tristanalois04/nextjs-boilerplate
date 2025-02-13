@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
-// Cargamos las fuentes Geist y Geist_Mono
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -13,7 +12,7 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-// Metadatos para SEO y Open Graph
+// Metadatos para SEO y redes sociales (ajusta según tu proyecto)
 export const metadata: Metadata = {
   title: "Aphelion - Industrial Visual Solutions",
   description:
@@ -30,7 +29,7 @@ export const metadata: Metadata = {
     title: "Aphelion - Industrial Visual Solutions",
     description:
       "We specialize in developing visual concepts that enable industrial companies to bring their ideas and products to life, transforming complex projects into clear, actionable solutions. Our approach optimizes technical and internal communication and creates a professional impact that facilitates investor attraction and enhances the value of each industrial proposal.",
-    url: "https://example.com/", // Reemplaza con tu dominio
+    url: "https://example.com/", // Reemplaza con tu dominio real
     siteName: "Aphelion",
     images: [
       {
@@ -51,9 +50,6 @@ export const metadata: Metadata = {
     images: ["/aphelion.svg"],
   },
   themeColor: "#000000",
-  alternates: {
-    canonical: "https://example.com/", // Reemplaza con tu dominio
-  },
 };
 
 export default function RootLayout({
@@ -69,3 +65,4 @@ export default function RootLayout({
     </html>
   );
 }
+

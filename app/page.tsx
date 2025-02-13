@@ -2,30 +2,83 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="bg-black text-white">
-      {/* Header con video de fondo */}
-      <header className="relative w-full h-[400px]">
-        <video autoPlay loop muted className="absolute inset-0 object-cover w-full h-full">
-          <source src="/dron.mp4" type="video/mp4" />
-          Tu navegador no soporta el elemento de video.
-        </video>
-        <div className="relative z-10 flex justify-between items-center p-4 max-w-6xl mx-auto">
-          <Image src="/aphelion.svg" alt="Aphelion Logo" width={150} height={50} />
-          <nav className="hidden sm:flex gap-6">
-            <a href="#services" className="hover:text-gray-400">Services</a>
-            <a href="#about" className="hover:text-gray-400">About</a>
-            <a href="#contact" className="hover:text-gray-400">Contact</a>
-          </nav>
+    <div className="bg-black text-white min-h-screen">
+      {/* Encabezado con dos barras (top bar y barra principal) */}
+      <header>
+        {/* Barra superior (top bar) - opcional */}
+        <div className="bg-black w-full py-2 px-4 text-right text-white text-sm">
+          {/* Aquí puedes poner info de contacto, redes sociales, etc. */}
+          <span>Call us: +1 (555) 123-4567</span>
+        </div>
+
+        {/* Barra principal con fondo blanco */}
+        <div className="bg-white w-full py-4 border-b border-gray-200">
+          <div className="max-w-6xl mx-auto flex items-center justify-between px-4">
+            {/* Logo a la izquierda */}
+            <div className="flex items-center">
+              <Image
+                src="/aphelion.svg"
+                alt="Aphelion Logo"
+                width={120}
+                height={40}
+              />
+            </div>
+
+            {/* Enlaces de navegación (visibles a partir de md) */}
+            <nav className="hidden md:flex space-x-4 text-gray-700 font-semibold">
+              <a href="#services" className="hover:text-gray-900">
+                Services
+              </a>
+              <a href="#how-it-works" className="hover:text-gray-900">
+                How it Works
+              </a>
+              <a href="#blog" className="hover:text-gray-900">
+                Blog
+              </a>
+              <a href="#support" className="hover:text-gray-900">
+                Support
+              </a>
+              <a href="#about" className="hover:text-gray-900">
+                About Us
+              </a>
+            </nav>
+
+            {/* Botón destacado a la derecha */}
+            <a
+              href="#design"
+              className="bg-orange-500 hover:bg-orange-600 text-white font-semibold py-2 px-4 rounded"
+            >
+              Design your technology
+            </a>
+          </div>
         </div>
       </header>
 
-      {/* Sección Hero con alineación tipo la imagen */}
-      <main className="max-w-6xl mx-auto mt-16 px-4">
+      {/* Sección con video de fondo */}
+      <section className="relative w-full h-[400px]">
+        <video
+          autoPlay
+          loop
+          muted
+          className="absolute inset-0 object-cover w-full h-full"
+        >
+          <source src="/dron.mp4" type="video/mp4" />
+          Tu navegador no soporta el elemento de video.
+        </video>
+        <div className="relative z-10 flex items-center justify-center h-full bg-black bg-opacity-30">
+          <h1 className="text-4xl sm:text-6xl font-bold text-center">
+            Transforming Industrial Vision
+          </h1>
+        </div>
+      </section>
+
+      {/* Sección Hero (ejemplo con dos columnas) */}
+      <main className="max-w-6xl mx-auto mt-10 px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
-          {/* Columna izquierda: título */}
+          {/* Columna izquierda: títulos */}
           <div>
             <h2 className="text-2xl sm:text-3xl font-semibold mb-2">Our Mission</h2>
-            <h1 className="text-4xl sm:text-6xl font-bold">
+            <h1 className="text-4xl sm:text-5xl font-bold">
               Transforming Industrial Vision
             </h1>
           </div>
@@ -49,20 +102,29 @@ export default function Home() {
       </main>
 
       {/* Sección de Servicios */}
-      <section id="services" className="w-full max-w-6xl mt-24 text-center px-4 mx-auto">
+      <section
+        id="services"
+        className="w-full max-w-6xl mt-24 text-center px-4 mx-auto"
+      >
         <h2 className="text-3xl font-semibold mb-6">Our Services</h2>
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-8">
           <div className="p-6 bg-gray-800 rounded-lg">
             <h3 className="text-xl font-semibold">3D Visualization</h3>
-            <p className="text-gray-300 mt-2">High-quality industrial 3D videos and models.</p>
+            <p className="text-gray-300 mt-2">
+              High-quality industrial 3D videos and models.
+            </p>
           </div>
           <div className="p-6 bg-gray-800 rounded-lg">
             <h3 className="text-xl font-semibold">Digital Prototyping</h3>
-            <p className="text-gray-300 mt-2">Streamline development with digital simulations.</p>
+            <p className="text-gray-300 mt-2">
+              Streamline development with digital simulations.
+            </p>
           </div>
           <div className="p-6 bg-gray-800 rounded-lg">
             <h3 className="text-xl font-semibold">Process Optimization</h3>
-            <p className="text-gray-300 mt-2">Enhance efficiency with data-driven insights.</p>
+            <p className="text-gray-300 mt-2">
+              Enhance efficiency with data-driven insights.
+            </p>
           </div>
         </div>
       </section>
@@ -74,3 +136,4 @@ export default function Home() {
     </div>
   );
 }
+
