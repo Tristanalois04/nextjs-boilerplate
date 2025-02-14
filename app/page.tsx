@@ -48,7 +48,7 @@ export default function Home() {
           {/* Columna izquierda: título */}
           <div>
             <h1 className="text-5xl sm:text-6xl font-bold">
-              SIMPLIFY COMMUNICATE AND <span className="text-[#FF6600]">IMPRESS</span>
+              SIMPLIFY COMMUNICATE AND <span className="text-[#FF6600]">IMPRESS.</span>
             </h1>
           </div>
 
