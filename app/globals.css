@@ -2,12 +2,25 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Importamos la fuente Orbitron desde Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+/* Carga de fuente personalizada desde public/fonts */
+@font-face {
+  font-family: 'Orbitron';
+  src: url('/fonts/Orbitron-Regular.woff2') format('woff2'),
+       url('/fonts/Orbitron-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
 
 :root {
   --background: #000000;
   --foreground: #ffffff;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #000000;
+    --foreground: #ffffff;
+  }
 }
 
 body {
@@ -16,7 +29,7 @@ body {
   font-family: 'Helvetica', sans-serif;
 }
 
-/* Los títulos usarán Orbitron */
+/* Los títulos usarán la fuente Orbitron */
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Orbitron', sans-serif;
 }
