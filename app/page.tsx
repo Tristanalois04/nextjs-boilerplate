@@ -48,16 +48,23 @@ export default function Home() {
           {/* Columna izquierda: título */}
           <div>
             <h1 className="text-5xl sm:text-6xl font-bold">
-              SIMPLIFY, COMMUNICATE, AND <span className="text-[#FF6600]">IMPRESS</span>
+              SIMPLIFY COMMUNICATE AND <span className="text-[#FF6600]">IMPRESS</span>
             </h1>
           </div>
 
           {/* Columna derecha: texto descriptivo */}
           <div>
-            <p className="text-lg sm:text-xl text-gray-300 leading-relaxed">
+            <p
+              style={{ textAlign: "justify" }}
+              className="text-lg sm:text-xl text-gray-300 leading-relaxed"
+            >
+              <span className="text-[#FF6600]"><< </span>
               We specialize in developing visual concepts that enable industrial companies to bring their ideas and products to life, transforming complex projects into clear, actionable solutions.
             </p>
-            <p className="text-lg sm:text-xl text-gray-300 leading-relaxed mt-4">
+            <p
+              style={{ textAlign: "justify" }}
+              className="text-lg sm:text-xl text-gray-300 leading-relaxed mt-4"
+            >
               Our approach optimizes technical and internal communication and creates a professional impact that facilitates investor attraction and enhances the value of each industrial proposal.
             </p>
           </div>
@@ -65,7 +72,10 @@ export default function Home() {
       </main>
 
       {/* Sección de Servicios */}
-      <section id="services" className="w-full max-w-6xl mt-24 text-center px-4 mx-auto">
+      <section
+        id="services"
+        className="w-full max-w-6xl mt-24 text-center px-4 mx-auto"
+      >
         <h2 className="text-3xl font-semibold mb-6">Our Services</h2>
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-8">
           <div className="p-6 bg-gray-800 rounded-lg">
