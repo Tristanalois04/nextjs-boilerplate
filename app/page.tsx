@@ -66,27 +66,27 @@ export default function Home() {
       </main>
 
       {/* Sección de Servicios */}
-      <section
-        id="services"
-        className="w-full max-w-6xl mt-24 px-4 mx-auto"
-      >
-        {/* Ícono que reemplaza el titular "Our Services" */}
-        <div className="text-center mb-8">
+      <section id="services" className="w-full max-w-6xl mt-24 px-4 mx-auto">
+        {/* Ícono "our services" 30% más grande y con más espacio debajo (mb-12) */}
+        <div className="text-center mb-12">
           <Image
             src="/our services.svg"
             alt="Our Services"
-            width={150}
-            height={50}
+            width={195}
+            height={65} // 30% mayor que 50 (50 + 30% = 65)
             className="mx-auto"
           />
         </div>
 
-        {/* Grid con 4 columnas inspiradas en la imagen adjunta */}
+        {/* Grid con 4 columnas */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-left">
           {/* 1) 3D Modeling and Video Production */}
           <div>
-            <h3 className="text-xl font-semibold mb-2">
-              3D Modeling and Video Production
+            <h3
+              className="text-xl font-bold mb-2 uppercase tracking-[0.06em]"
+              style={{ fontFamily: "Helvetica, sans-serif" }}
+            >
+              3D MODELING AND VIDEO PRODUCTION
             </h3>
             <p className="text-gray-300 leading-relaxed">
               We develop high-quality 3D animations that facilitate detailed,
@@ -97,8 +97,11 @@ export default function Home() {
 
           {/* 2) Brand Design and Digital Content */}
           <div>
-            <h3 className="text-xl font-semibold mb-2">
-              Brand Design and Digital Content
+            <h3
+              className="text-xl font-bold mb-2 uppercase tracking-[0.06em]"
+              style={{ fontFamily: "Helvetica, sans-serif" }}
+            >
+              BRAND DESIGN AND DIGITAL CONTENT
             </h3>
             <p className="text-gray-300 leading-relaxed">
               We create strong visual identities and strategic digital content
@@ -109,8 +112,11 @@ export default function Home() {
 
           {/* 3) Structural Previews and Technical Illustrations */}
           <div>
-            <h3 className="text-xl font-semibold mb-2">
-              Structural Previews and Technical Illustrations
+            <h3
+              className="text-xl font-bold mb-2 uppercase tracking-[0.06em]"
+              style={{ fontFamily: "Helvetica, sans-serif" }}
+            >
+              STRUCTURAL PREVIEWS AND TECHNICAL ILLUSTRATIONS
             </h3>
             <p className="text-gray-300 leading-relaxed">
               We offer advanced graphical representations that allow for
@@ -122,8 +128,11 @@ export default function Home() {
 
           {/* 4) Technical Material and Internal Documentation Design */}
           <div>
-            <h3 className="text-xl font-semibold mb-2">
-              Technical Material and Internal Documentation Design
+            <h3
+              className="text-xl font-bold mb-2 uppercase tracking-[0.06em]"
+              style={{ fontFamily: "Helvetica, sans-serif" }}
+            >
+              TECHNICAL MATERIAL AND INTERNAL DOCUMENTATION DESIGN
             </h3>
             <p className="text-gray-300 leading-relaxed">
               We produce high-quality technical and internal documentation,
@@ -142,5 +151,6 @@ export default function Home() {
     </div>
   );
 }
+
 
 
