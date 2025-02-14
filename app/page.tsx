@@ -67,23 +67,24 @@ export default function Home() {
 
       {/* Sección de Servicios */}
       <section id="services" className="w-full max-w-6xl mt-24 px-4 mx-auto">
-        {/* Ícono "our services" 30% más grande y con más espacio debajo (mb-12) */}
-        <div className="text-center mb-12">
-          <Image
-            src="/our services.svg"
-            alt="Our Services"
-            width={195}
-            height={65} // 30% mayor que 50 (50 + 30% = 65)
-            className="mx-auto"
-          />
+        {/* Icono convertido en botón, alineado a la izquierda */}
+        <div className="mb-[4.5rem]">
+          <a href="#services-grid">
+            <Image
+              src="/our services.svg"
+              alt="Our Services"
+              width={195}
+              height={65}
+            />
+          </a>
         </div>
 
         {/* Grid con 4 columnas */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-left">
+        <div id="services-grid" className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-left">
           {/* 1) 3D Modeling and Video Production */}
           <div>
             <h3
-              className="text-xl font-bold mb-2 uppercase tracking-[0.06em]"
+              className="text-xl font-bold mb-4 uppercase tracking-[0.06em]"
               style={{ fontFamily: "Helvetica, sans-serif" }}
             >
               3D MODELING AND VIDEO PRODUCTION
@@ -98,7 +99,7 @@ export default function Home() {
           {/* 2) Brand Design and Digital Content */}
           <div>
             <h3
-              className="text-xl font-bold mb-2 uppercase tracking-[0.06em]"
+              className="text-xl font-bold mb-4 uppercase tracking-[0.06em]"
               style={{ fontFamily: "Helvetica, sans-serif" }}
             >
               BRAND DESIGN AND DIGITAL CONTENT
@@ -113,7 +114,7 @@ export default function Home() {
           {/* 3) Structural Previews and Technical Illustrations */}
           <div>
             <h3
-              className="text-xl font-bold mb-2 uppercase tracking-[0.06em]"
+              className="text-xl font-bold mb-4 uppercase tracking-[0.06em]"
               style={{ fontFamily: "Helvetica, sans-serif" }}
             >
               STRUCTURAL PREVIEWS AND TECHNICAL ILLUSTRATIONS
@@ -129,7 +130,7 @@ export default function Home() {
           {/* 4) Technical Material and Internal Documentation Design */}
           <div>
             <h3
-              className="text-xl font-bold mb-2 uppercase tracking-[0.06em]"
+              className="text-xl font-bold mb-4 uppercase tracking-[0.06em]"
               style={{ fontFamily: "Helvetica, sans-serif" }}
             >
               TECHNICAL MATERIAL AND INTERNAL DOCUMENTATION DESIGN
@@ -151,6 +152,5 @@ export default function Home() {
     </div>
   );
 }
-
 
 
