@@ -69,7 +69,7 @@ export default function Home() {
           <div>
             <h2 className="text-2xl sm:text-3xl font-semibold mb-2">Our Mission</h2>
             <h1 className="text-4xl sm:text-5xl font-bold">
-              Transforming Industrial Vision
+              SIMPLIFY COMUNICATE IMPRESS
             </h1>
           </div>
 
