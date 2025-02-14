@@ -102,7 +102,7 @@ export default function Home() {
             </h3>
             <p className="text-gray-300 leading-relaxed">
               We create strong visual identities and strategic digital content
-              that enhance your brand's presence in the market. We ensure
+              that enhance your brand&#39;s presence in the market. We ensure
               consistency and professionalism at every touchpoint.
             </p>
           </div>
