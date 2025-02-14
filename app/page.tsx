@@ -51,7 +51,6 @@ export default function Home() {
               SIMPLIFY COMMUNICATE AND <span className="text-[#FF6600]">IMPRESS</span>
             </h1>
           </div>
-
           {/* Columna derecha: texto descriptivo */}
           <div>
             <p className="text-lg sm:text-xl text-gray-300 leading-relaxed text-justify">
@@ -67,8 +66,8 @@ export default function Home() {
 
       {/* Sección de Servicios */}
       <section id="services" className="w-full max-w-6xl mt-24 px-4 mx-auto">
-        {/* Icono convertido en botón, alineado a la izquierda */}
-        <div className="mb-[4.5rem]">
+        {/* Ícono convertido en botón, alineado a la izquierda y con mayor separación */}
+        <div className="mb-[4.5rem] text-left">
           <a href="#services-grid">
             <Image
               src="/our services.svg"
@@ -81,65 +80,55 @@ export default function Home() {
 
         {/* Grid con 4 columnas */}
         <div id="services-grid" className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-left">
-          {/* 1) 3D Modeling and Video Production */}
+          {/* 1) 3D MODELING & VIDEO PRODUCTION */}
           <div>
             <h3
               className="text-xl font-bold mb-4 uppercase tracking-[0.06em]"
               style={{ fontFamily: "Helvetica, sans-serif" }}
             >
-              3D MODELING AND VIDEO PRODUCTION
+              3D MODELING & VIDEO PRODUCTION
             </h3>
             <p className="text-gray-300 leading-relaxed">
-              We develop high-quality 3D animations that facilitate detailed,
-              precise, and dynamic visualizations of industrial processes,
-              product prototypes, and structures.
+              High-quality 3D animations bring industrial processes, product prototypes, and structures to life with precision and clarity.
             </p>
           </div>
 
-          {/* 2) Brand Design and Digital Content */}
+          {/* 2) BRAND DESIGN & DIGITAL CONTENT */}
           <div>
             <h3
               className="text-xl font-bold mb-4 uppercase tracking-[0.06em]"
               style={{ fontFamily: "Helvetica, sans-serif" }}
             >
-              BRAND DESIGN AND DIGITAL CONTENT
+              BRAND DESIGN & DIGITAL CONTENT
             </h3>
             <p className="text-gray-300 leading-relaxed">
-              We create strong visual identities and strategic digital content
-              that enhance your brand&#39;s presence in the market. We ensure
-              consistency and professionalism at every touchpoint.
+              A strong visual identity and strategic content elevate brand presence, ensuring consistency and professionalism at every interaction.
             </p>
           </div>
 
-          {/* 3) Structural Previews and Technical Illustrations */}
+          {/* 3) STRUCTURAL PREVIEWS & TECHNICAL ILLUSTRATIONS */}
           <div>
             <h3
               className="text-xl font-bold mb-4 uppercase tracking-[0.06em]"
               style={{ fontFamily: "Helvetica, sans-serif" }}
             >
-              STRUCTURAL PREVIEWS AND TECHNICAL ILLUSTRATIONS
+              STRUCTURAL PREVIEWS & TECHNICAL ILLUSTRATIONS
             </h3>
             <p className="text-gray-300 leading-relaxed">
-              We offer advanced graphical representations that allow for
-              accurate anticipation of final structural and infrastructure
-              designs, complemented by technical illustrations that enhance the
-              understanding of complex products and processes.
+              Advanced visual representations provide accurate structural insights, while technical illustrations simplify complex concepts for better understanding.
             </p>
           </div>
 
-          {/* 4) Technical Material and Internal Documentation Design */}
+          {/* 4) TECHNICAL MATERIAL & DOCUMENTATION */}
           <div>
             <h3
               className="text-xl font-bold mb-4 uppercase tracking-[0.06em]"
               style={{ fontFamily: "Helvetica, sans-serif" }}
             >
-              TECHNICAL MATERIAL AND INTERNAL DOCUMENTATION DESIGN
+              TECHNICAL MATERIAL & DOCUMENTATION
             </h3>
             <p className="text-gray-300 leading-relaxed">
-              We produce high-quality technical and internal documentation,
-              including manuals, operational guides, and training materials, all
-              designed to improve efficiency and support effective knowledge
-              management within your organization.
+              Clear, well-structured manuals, operational guides, and training materials optimize efficiency and knowledge retention.
             </p>
           </div>
         </div>
@@ -152,5 +141,4 @@ export default function Home() {
     </div>
   );
 }
-
 
