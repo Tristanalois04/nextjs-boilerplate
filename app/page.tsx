@@ -47,7 +47,7 @@ export default function Home() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
           {/* Columna izquierda: título */}
           <div>
-            <h1 className="text-6xl sm:text-7xl font-bold">
+            <h1 className="text-5xl sm:text-6xl font-bold">
               SIMPLIFY, COMMUNICATE, AND <span className="text-[#FF6600]">IMPRESS</span>
             </h1>
           </div>
