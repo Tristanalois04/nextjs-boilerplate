@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function Home() {
   return (
     <div className="bg-black text-white min-h-screen">
-      {/* Encabezado: Barra de navegación en negro con outline blanco */}
+      {/* Encabezado: Barra de navegación en negro con outline blanco (sin texto) */}
       <header>
         <div className="bg-black w-full py-4 border-b border-gray-800 outline outline-1 outline-white">
           <div className="w-4/5 mx-auto flex items-center justify-between px-4">
@@ -16,27 +16,8 @@ export default function Home() {
                 height={40}
               />
             </div>
-
-            {/* Enlaces de navegación */}
-            <nav className="hidden md:flex space-x-4 text-white font-semibold">
-              <a href="#services" className="hover:text-gray-300">
-                Services
-              </a>
-              <a href="#how-it-works" className="hover:text-gray-300">
-                How it Works
-              </a>
-              <a href="#blog" className="hover:text-gray-300">
-                Blog
-              </a>
-              <a href="#support" className="hover:text-gray-300">
-                Support
-              </a>
-              <a href="#about" className="hover:text-gray-300">
-                About Us
-              </a>
-            </nav>
-
-            {/* Botón reemplazado por imagen (boton.svg) con tamaño incrementado en 20% */}
+            {/* Sin enlaces de navegación */}
+            {/* Botón reemplazado por imagen (boton.svg) */}
             <a href="#design">
               <Image
                 src="/boton.svg"
@@ -63,13 +44,12 @@ export default function Home() {
       </section>
 
       {/* Sección Hero */}
-      <main className="max-w-6xl mx-auto mt-10 px-4">
+      <main className="max-w-6xl mx-auto mt-14 px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
-          {/* Columna izquierda: títulos */}
+          {/* Columna izquierda: título */}
           <div>
-            <h2 className="text-2xl sm:text-3xl font-semibold mb-2">Our Mission</h2>
             <h1 className="text-4xl sm:text-5xl font-bold">
-              SIMPLIFY COMUNICATE IMPRESS
+              SIMPLIFY, COMMUNICATE, AND IMPRESS.
             </h1>
           </div>
 
@@ -81,12 +61,6 @@ export default function Home() {
             <p className="text-lg sm:text-xl text-gray-300 leading-relaxed mt-4">
               Our approach optimizes technical and internal communication and creates a professional impact that facilitates investor attraction and enhances the value of each industrial proposal.
             </p>
-            <a
-              href="#services"
-              className="inline-block bg-blue-600 px-6 py-3 rounded-lg text-lg font-semibold hover:bg-blue-500 mt-6"
-            >
-              Explore Our Services
-            </a>
           </div>
         </div>
       </main>
@@ -123,3 +97,4 @@ export default function Home() {
     </div>
   );
 }
+
