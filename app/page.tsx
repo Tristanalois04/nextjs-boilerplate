@@ -48,14 +48,14 @@ export default function Home() {
           {/* Columna izquierda: título */}
           <div>
             <h1 className="text-5xl sm:text-6xl font-bold">
-              SIMPLIFY, COMMUNICATE, AND <span className="text-[#FF6600]">IMPRESS</span>
+              SIMPLIFY COMMUNICATE AND <span className="text-[#FF6600]">IMPRESS</span>
             </h1>
           </div>
 
           {/* Columna derecha: texto descriptivo */}
           <div>
             <p className="text-lg sm:text-xl text-gray-300 leading-relaxed">
-              We specialize in developing visual concepts that enable industrial companies to bring their ideas and products to life, transforming complex projects into clear, actionable solutions.
+             <span className="text-[#FF6600]"> << </span> We specialize in developing visual concepts that enable industrial companies to bring their ideas and products to life, transforming complex projects into clear, actionable solutions.
             </p>
             <p className="text-lg sm:text-xl text-gray-300 leading-relaxed mt-4">
               Our approach optimizes technical and internal communication and creates a professional impact that facilitates investor attraction and enhances the value of each industrial proposal.
