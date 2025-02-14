@@ -66,25 +66,70 @@ export default function Home() {
       </main>
 
       {/* Sección de Servicios */}
-      <section id="services" className="w-full max-w-6xl mt-24 text-center px-4 mx-auto">
-        <h2 className="text-3xl font-semibold mb-6">Our Services</h2>
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-8">
-          <div className="p-6 bg-gray-800 rounded-lg">
-            <h3 className="text-xl font-semibold">3D Visualization</h3>
-            <p className="text-gray-300 mt-2">
-              High-quality industrial 3D videos and models.
+      <section
+        id="services"
+        className="w-full max-w-6xl mt-24 px-4 mx-auto"
+      >
+        {/* Ícono que reemplaza el titular "Our Services" */}
+        <div className="text-center mb-8">
+          <Image
+            src="/our services.svg"
+            alt="Our Services"
+            width={150}
+            height={50}
+            className="mx-auto"
+          />
+        </div>
+
+        {/* Grid con 4 columnas inspiradas en la imagen adjunta */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-left">
+          {/* 1) 3D Modeling and Video Production */}
+          <div>
+            <h3 className="text-xl font-semibold mb-2">
+              3D Modeling and Video Production
+            </h3>
+            <p className="text-gray-300 leading-relaxed">
+              We develop high-quality 3D animations that facilitate detailed,
+              precise, and dynamic visualizations of industrial processes,
+              product prototypes, and structures.
             </p>
           </div>
-          <div className="p-6 bg-gray-800 rounded-lg">
-            <h3 className="text-xl font-semibold">Digital Prototyping</h3>
-            <p className="text-gray-300 mt-2">
-              Streamline development with digital simulations.
+
+          {/* 2) Brand Design and Digital Content */}
+          <div>
+            <h3 className="text-xl font-semibold mb-2">
+              Brand Design and Digital Content
+            </h3>
+            <p className="text-gray-300 leading-relaxed">
+              We create strong visual identities and strategic digital content
+              that enhance your brand's presence in the market. We ensure
+              consistency and professionalism at every touchpoint.
             </p>
           </div>
-          <div className="p-6 bg-gray-800 rounded-lg">
-            <h3 className="text-xl font-semibold">Process Optimization</h3>
-            <p className="text-gray-300 mt-2">
-              Enhance efficiency with data-driven insights.
+
+          {/* 3) Structural Previews and Technical Illustrations */}
+          <div>
+            <h3 className="text-xl font-semibold mb-2">
+              Structural Previews and Technical Illustrations
+            </h3>
+            <p className="text-gray-300 leading-relaxed">
+              We offer advanced graphical representations that allow for
+              accurate anticipation of final structural and infrastructure
+              designs, complemented by technical illustrations that enhance the
+              understanding of complex products and processes.
+            </p>
+          </div>
+
+          {/* 4) Technical Material and Internal Documentation Design */}
+          <div>
+            <h3 className="text-xl font-semibold mb-2">
+              Technical Material and Internal Documentation Design
+            </h3>
+            <p className="text-gray-300 leading-relaxed">
+              We produce high-quality technical and internal documentation,
+              including manuals, operational guides, and training materials, all
+              designed to improve efficiency and support effective knowledge
+              management within your organization.
             </p>
           </div>
         </div>
@@ -97,4 +142,5 @@ export default function Home() {
     </div>
   );
 }
+
 
