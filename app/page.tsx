@@ -4,7 +4,6 @@ import { useEffect } from "react";
 import Image from "next/image";
 
 export default function Home() {
-  // Deshabilitar clic derecho en todo el sitio
   useEffect(() => {
     const handleContextMenu = (e: MouseEvent) => {
       e.preventDefault();
@@ -17,11 +16,11 @@ export default function Home() {
 
   return (
     <div className="bg-black text-white min-h-screen">
-      {/* Encabezado: Barra de navegación en negro con outline blanco sin texto */}
+      {/* Header */}
       <header>
         <div className="bg-black w-full py-4 border-b border-gray-800 outline outline-1 outline-white">
           <div className="w-4/5 mx-auto flex items-center justify-between px-4">
-            {/* Logo a la izquierda */}
+            {/* Logo */}
             <div className="flex items-center">
               <Image
                 src="/aphelion.svg"
@@ -30,7 +29,7 @@ export default function Home() {
                 height={40}
               />
             </div>
-            {/* Botón reemplazado por imagen (boton.svg) */}
+            {/* Botón (imagen) */}
             <a href="#design">
               <Image
                 src="/boton.svg"
@@ -43,52 +42,41 @@ export default function Home() {
         </div>
       </header>
 
-      {/* Sección con video de fondo sin texto superpuesto */}
+      {/* Video Section */}
       <section className="relative w-full h-[400px]">
-        <video
-          autoPlay
-          loop
-          muted
-          className="absolute inset-0 object-cover w-full h-full"
-        >
+        <video autoPlay loop muted className="absolute inset-0 object-cover w-full h-full">
           <source src="/dron.mp4" type="video/mp4" />
           Tu navegador no soporta el elemento de video.
         </video>
       </section>
 
-      {/* Sección Hero */}
+      {/* Hero Section */}
       <main className="max-w-6xl mx-auto mt-14 px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-          {/* Columna izquierda: título */}
+          {/* Título */}
           <div>
             <h1 className="text-5xl sm:text-6xl font-bold">
-              SIMPLIFY COMMUNICATE AND{" "}
-              <span className="text-[#FF6600]">IMPRESS</span>
+              SIMPLIFY COMMUNICATE AND <span className="text-[#FF6600]">IMPRESS</span>
             </h1>
           </div>
-
-          {/* Columna derecha: texto descriptivo */}
+          {/* Descripción */}
           <div>
             <p className="text-lg sm:text-xl text-gray-300 leading-relaxed text-justify">
               <span className="text-[#FF6600]">{'<< '}</span>
-              We specialize in developing visual concepts that enable industrial
-              companies to bring their ideas and products to life, transforming
-              complex projects into clear, actionable solutions.
+              We specialize in developing visual concepts that enable industrial companies to bring their ideas and products to life, transforming complex projects into clear, actionable solutions.
             </p>
             <p className="text-lg sm:text-xl text-gray-300 leading-relaxed text-justify mt-4">
-              Our approach optimizes technical and internal communication and
-              creates a professional impact that facilitates investor attraction
-              and enhances the value of each industrial proposal.
+              Our approach optimizes technical and internal communication and creates a professional impact that facilitates investor attraction and enhances the value of each industrial proposal.
             </p>
           </div>
         </div>
       </main>
 
-      {/* Sección de Servicios */}
+      {/* Services Section */}
       <section id="services" className="w-full max-w-6xl mt-24 px-4 mx-auto">
-        {/* Contenedor del ícono de "our services" y el formulario de contacto */}
+        {/* Contenedor: Icono "Our Services" y email de contacto */}
         <div className="flex justify-between items-center mb-[4.5rem]">
-          {/* Ícono convertido en botón, alineado a la izquierda */}
+          {/* Icono convertido en botón */}
           <div className="text-left">
             <a href="#services-grid">
               <Image
@@ -99,25 +87,20 @@ export default function Home() {
               />
             </a>
           </div>
-          {/* Formulario de contacto a la derecha */}
-          <div className="flex items-center space-x-4">
-            <input
-              type="text"
-              placeholder="Write your message..."
-              className="bg-black text-white px-4 py-2 outline outline-white"
-            />
-            <button className="bg-white text-black px-4 py-2 rounded">
-              Contact Us
-            </button>
+          {/* Email de contacto convertido en enlace mailto */}
+          <div>
+            <a
+              href="mailto:team@aphelion.com.mx"
+              className="text-lg sm:text-xl text-gray-300 underline"
+            >
+              team@aphelion.com.mx
+            </a>
           </div>
         </div>
 
-        {/* Grid con 4 columnas de servicios */}
-        <div
-          id="services-grid"
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-left"
-        >
-          {/* 1) 3D MODELING & VIDEO PRODUCTION */}
+        {/* Grid de Servicios */}
+        <div id="services-grid" className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-left">
+          {/* Servicio 1 */}
           <div>
             <h3
               className="text-xl font-bold mb-4 uppercase tracking-[0.06em]"
@@ -126,12 +109,10 @@ export default function Home() {
               3D MODELING & VIDEO PRODUCTION
             </h3>
             <p className="text-gray-300 leading-relaxed">
-              High-quality 3D animations bring industrial processes, product
-              prototypes, and structures to life with precision and clarity.
+              High-quality 3D animations bring industrial processes, product prototypes, and structures to life with precision and clarity.
             </p>
           </div>
-
-          {/* 2) BRAND DESIGN & DIGITAL CONTENT */}
+          {/* Servicio 2 */}
           <div>
             <h3
               className="text-xl font-bold mb-4 uppercase tracking-[0.06em]"
@@ -140,13 +121,10 @@ export default function Home() {
               BRAND DESIGN & DIGITAL CONTENT
             </h3>
             <p className="text-gray-300 leading-relaxed">
-              A strong visual identity and strategic content elevate brand&#39;s
-              presence in the market, ensuring consistency and professionalism at
-              every interaction.
+              A strong visual identity and strategic digital content elevate brand&#39;s presence in the market, ensuring consistency and professionalism at every interaction.
             </p>
           </div>
-
-          {/* 3) STRUCTURAL PREVIEWS & TECHNICAL ILLUSTRATIONS */}
+          {/* Servicio 3 */}
           <div>
             <h3
               className="text-xl font-bold mb-4 uppercase tracking-[0.06em]"
@@ -155,13 +133,10 @@ export default function Home() {
               STRUCTURAL PREVIEWS & TECHNICAL ILLUSTRATIONS
             </h3>
             <p className="text-gray-300 leading-relaxed">
-              Advanced visual representations provide accurate structural insights,
-              while technical illustrations simplify complex concepts for better
-              understanding.
+              Advanced visual representations provide accurate structural insights, while technical illustrations simplify complex concepts for better understanding.
             </p>
           </div>
-
-          {/* 4) TECHNICAL MATERIAL & DOCUMENTATION */}
+          {/* Servicio 4 */}
           <div>
             <h3
               className="text-xl font-bold mb-4 uppercase tracking-[0.06em]"
@@ -170,8 +145,7 @@ export default function Home() {
               TECHNICAL MATERIAL & DOCUMENTATION
             </h3>
             <p className="text-gray-300 leading-relaxed">
-              Clear, well-structured manuals, operational guides, and training
-              materials optimize efficiency and knowledge retention.
+              Clear, well-structured manuals, operational guides, and training materials optimize efficiency and knowledge retention.
             </p>
           </div>
         </div>
