@@ -1,4 +1,5 @@
 "use client";
+"use client";
 
 import { useEffect } from "react";
 import Image from "next/image";
@@ -57,22 +58,17 @@ export default function Home() {
           {/* Título */}
           <div>
             <h1 className="text-5xl sm:text-6xl font-bold">
-              SIMPLIFY COMMUNICATE AND{" "}
-              <span className="text-[#FF6600]">IMPRESS</span>
+              SIMPLIFY COMMUNICATE AND <span className="text-[#FF6600]">IMPRESS</span>
             </h1>
           </div>
           {/* Descripción */}
           <div>
             <p className="text-lg sm:text-xl text-gray-300 leading-relaxed text-justify">
               <span className="text-[#FF6600]">{'<< '}</span>
-              We specialize in developing visual concepts that enable industrial
-              companies to bring their ideas and products to life, transforming
-              complex projects into clear, actionable solutions.
+              We specialize in developing visual concepts that enable industrial companies to bring their ideas and products to life, transforming complex projects into clear, actionable solutions.
             </p>
             <p className="text-lg sm:text-xl text-gray-300 leading-relaxed text-justify mt-4">
-              Our approach optimizes technical and internal communication and
-              creates a professional impact that facilitates investor attraction
-              and enhances the value of each industrial proposal.
+              Our approach optimizes technical and internal communication and creates a professional impact that facilitates investor and client attraction and enhances each industrial proposal&#39;s value.
             </p>
           </div>
         </div>
@@ -93,10 +89,7 @@ export default function Home() {
         </div>
 
         {/* Grid de Servicios */}
-        <div
-          id="services-grid"
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-left"
-        >
+        <div id="services-grid" className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-left">
           {/* Servicio 1 */}
           <div>
             <h3
@@ -106,8 +99,7 @@ export default function Home() {
               3D MODELING & VIDEO PRODUCTION
             </h3>
             <p className="text-gray-300 leading-relaxed">
-              High-quality 3D animations bring industrial processes, product
-              prototypes, and structures to life with precision and clarity.
+              High-quality 3D animations bring industrial processes, product prototypes, and structures to life with precision and clarity.
             </p>
           </div>
           {/* Servicio 2 */}
@@ -119,9 +111,7 @@ export default function Home() {
               BRAND DESIGN & DIGITAL CONTENT
             </h3>
             <p className="text-gray-300 leading-relaxed">
-              A strong visual identity and strategic digital content elevate
-              brand&#39;s presence in the market, ensuring consistency and
-              professionalism at every interaction.
+              A strong visual identity and strategic digital content elevate brand&#39;s presence in the market, ensuring consistency and professionalism at every interaction.
             </p>
           </div>
           {/* Servicio 3 */}
@@ -133,9 +123,7 @@ export default function Home() {
               STRUCTURAL PREVIEWS & TECHNICAL ILLUSTRATIONS
             </h3>
             <p className="text-gray-300 leading-relaxed">
-              Advanced visual representations provide accurate structural
-              insights, while technical illustrations simplify complex concepts
-              for better understanding.
+              Advanced visual representations provide accurate structural insights, while technical illustrations simplify complex concepts for better understanding.
             </p>
           </div>
           {/* Servicio 4 */}
@@ -147,8 +135,7 @@ export default function Home() {
               TECHNICAL MATERIAL & DOCUMENTATION
             </h3>
             <p className="text-gray-300 leading-relaxed">
-              Clear, well-structured manuals, operational guides, and training
-              materials optimize efficiency and knowledge retention.
+              Clear, well-structured manuals, operational guides, and training materials optimize efficiency and knowledge retention.
             </p>
           </div>
         </div>
@@ -156,10 +143,7 @@ export default function Home() {
 
       {/* Footer */}
       <footer className="mt-24 py-6 w-full">
-        <div
-          className="max-w-6xl mx-auto flex justify-between px-4 text-white"
-          style={{ fontFamily: "Helvetica, sans-serif" }}
-        >
+        <div className="max-w-6xl mx-auto flex justify-between px-4 text-white" style={{ fontFamily: "Helvetica, sans-serif" }}>
           <div>
             © {new Date().getFullYear()} Aphelion.
           </div>
