@@ -74,9 +74,9 @@ export default function Home() {
 
       {/* Services Section */}
       <section id="services" className="w-full max-w-6xl mt-24 px-4 mx-auto">
-        {/* Contenedor: Icono "Our Services" y email de contacto */}
+        {/* Container: "Our Services" icon and email */}
         <div className="flex justify-between items-center mb-[4.5rem]">
-          {/* Icono convertido en botón */}
+          {/* Icon as button */}
           <div className="text-left">
             <a href="#services-grid">
               <Image
@@ -87,7 +87,7 @@ export default function Home() {
               />
             </a>
           </div>
-          {/* Email de contacto convertido en enlace mailto */}
+          {/* Email link */}
           <div>
             <a
               href="mailto:team@aphelion.com.mx"
@@ -98,9 +98,9 @@ export default function Home() {
           </div>
         </div>
 
-        {/* Grid de Servicios */}
+        {/* Services Grid */}
         <div id="services-grid" className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-left">
-          {/* Servicio 1 */}
+          {/* Service 1 */}
           <div>
             <h3
               className="text-xl font-bold mb-4 uppercase tracking-[0.06em]"
@@ -112,7 +112,7 @@ export default function Home() {
               High-quality 3D animations bring industrial processes, product prototypes, and structures to life with precision and clarity.
             </p>
           </div>
-          {/* Servicio 2 */}
+          {/* Service 2 */}
           <div>
             <h3
               className="text-xl font-bold mb-4 uppercase tracking-[0.06em]"
@@ -124,7 +124,7 @@ export default function Home() {
               A strong visual identity and strategic digital content elevate brand&#39;s presence in the market, ensuring consistency and professionalism at every interaction.
             </p>
           </div>
-          {/* Servicio 3 */}
+          {/* Service 3 */}
           <div>
             <h3
               className="text-xl font-bold mb-4 uppercase tracking-[0.06em]"
@@ -136,7 +136,7 @@ export default function Home() {
               Advanced visual representations provide accurate structural insights, while technical illustrations simplify complex concepts for better understanding.
             </p>
           </div>
-          {/* Servicio 4 */}
+          {/* Service 4 */}
           <div>
             <h3
               className="text-xl font-bold mb-4 uppercase tracking-[0.06em]"
@@ -151,9 +151,12 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Footer */}
+      {/* Footer with email in contact info */}
       <footer className="mt-24 py-6 text-center text-gray-500 w-full">
-        © {new Date().getFullYear()} Aphelion. All rights reserved.
+        © {new Date().getFullYear()} Aphelion. All rights reserved. Contact us at{" "}
+        <a href="mailto:team@aphelion.com.mx" className="underline text-gray-500">
+          team@aphelion.com.mx
+        </a>
       </footer>
     </div>
   );
