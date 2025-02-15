@@ -156,7 +156,10 @@ export default function Home() {
 
       {/* Footer */}
       <footer className="mt-24 py-6 w-full">
-        <div className="max-w-6xl mx-auto flex justify-between px-4 text-white">
+        <div
+          className="max-w-6xl mx-auto flex justify-between px-4 text-white"
+          style={{ fontFamily: "Helvetica, sans-serif" }}
+        >
           <div>
             © {new Date().getFullYear()} Aphelion.
           </div>
