@@ -5,6 +5,7 @@ import Image from "next/image";
 
 export default function Home() {
   useEffect(() => {
+    // Deshabilitar clic derecho
     const handleContextMenu = (e: MouseEvent) => {
       e.preventDefault();
     };
@@ -42,7 +43,7 @@ export default function Home() {
         </div>
       </header>
 
-      {/* Video Section */}
+      {/* Sección con video de fondo */}
       <section className="relative w-full h-[400px]">
         <video
           autoPlay
@@ -55,32 +56,36 @@ export default function Home() {
         </video>
       </section>
 
-      {/* Hero Section */}
+      {/* Sección Hero */}
       <main className="max-w-6xl mx-auto mt-14 px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-          {/* Left: Title */}
+          {/* Título */}
           <div>
             <h1 className="text-5xl sm:text-6xl font-bold">
               SIMPLIFY COMMUNICATE AND{" "}
               <span className="text-[#FF6600]">IMPRESS</span>
             </h1>
           </div>
-          {/* Right: Description */}
+          {/* Descripción */}
           <div>
             <p className="text-lg sm:text-xl text-gray-300 leading-relaxed text-justify">
               <span className="text-[#FF6600]">{'<< '}</span>
-              We specialize in developing visual concepts that enable industrial companies to bring their ideas and products to life, transforming complex projects into clear, actionable solutions.
+              We specialize in developing visual concepts that enable industrial
+              companies to bring their ideas and products to life, transforming
+              complex projects into clear, actionable solutions.
             </p>
             <p className="text-lg sm:text-xl text-gray-300 leading-relaxed text-justify mt-4">
-              Our approach optimizes technical and internal communication and creates a professional impact that facilitates investor attraction and enhances the value of each industrial proposal.
+              Our approach optimizes technical and internal communication and
+              creates a professional impact that facilitates investor attraction
+              and enhances the value of each industrial proposal.
             </p>
           </div>
         </div>
       </main>
 
-      {/* Services Section */}
+      {/* Sección de Servicios */}
       <section id="services" className="w-full max-w-6xl mt-24 px-4 mx-auto">
-        {/* Container: "Our Services" icon (left) */}
+        {/* Ícono "Our Services" alineado a la izquierda */}
         <div className="flex justify-start items-center mb-[4.5rem]">
           <a href="#services-grid">
             <Image
@@ -92,12 +97,12 @@ export default function Home() {
           </a>
         </div>
 
-        {/* Grid of Services */}
+        {/* Grid de Servicios */}
         <div
           id="services-grid"
           className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-left"
         >
-          {/* Service 1 */}
+          {/* Servicio 1 */}
           <div>
             <h3
               className="text-xl font-bold mb-4 uppercase tracking-[0.06em]"
@@ -110,7 +115,7 @@ export default function Home() {
               prototypes, and structures to life with precision and clarity.
             </p>
           </div>
-          {/* Service 2 */}
+          {/* Servicio 2 */}
           <div>
             <h3
               className="text-xl font-bold mb-4 uppercase tracking-[0.06em]"
@@ -119,10 +124,12 @@ export default function Home() {
               BRAND DESIGN & DIGITAL CONTENT
             </h3>
             <p className="text-gray-300 leading-relaxed">
-              A strong visual identity and strategic digital content elevate brand&#39;s presence in the market, ensuring consistency and professionalism at every interaction.
+              A strong visual identity and strategic digital content elevate
+              brand&#39;s presence in the market, ensuring consistency and
+              professionalism at every interaction.
             </p>
           </div>
-          {/* Service 3 */}
+          {/* Servicio 3 */}
           <div>
             <h3
               className="text-xl font-bold mb-4 uppercase tracking-[0.06em]"
@@ -131,12 +138,12 @@ export default function Home() {
               STRUCTURAL PREVIEWS & TECHNICAL ILLUSTRATIONS
             </h3>
             <p className="text-gray-300 leading-relaxed">
-              Advanced visual representations provide accurate structural insights,
-              while technical illustrations simplify complex concepts for better
-              understanding.
+              Advanced visual representations provide accurate structural
+              insights, while technical illustrations simplify complex concepts
+              for better understanding.
             </p>
           </div>
-          {/* Service 4 */}
+          {/* Servicio 4 */}
           <div>
             <h3
               className="text-xl font-bold mb-4 uppercase tracking-[0.06em]"
@@ -152,19 +159,22 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="mt-24 py-6 text-gray-500 w-full">
-        <div className="max-w-6xl mx-auto flex justify-between">
-          <div className="text-left">
-            © {new Date().getFullYear()}
-          </div>
-          <div className="text-right">
-            <a href="mailto:team@aphelion.com.mx" className="underline">
-              team@aphelion.com.mx
-            </a>
-          </div>
+      {/* Barra inferior con imagen y texto en negro */}
+      <div className="relative mt-24">
+        <Image
+          src="/barra_inferior.svg"
+          alt="Barra Inferior"
+          className="w-full h-auto"
+        />
+        <div className="absolute inset-0 flex items-center justify-between px-4">
+          <p className="text-black font-semibold">
+            © {new Date().getFullYear()} Aphelion. All rights reserved.
+          </p>
+          <p className="text-black font-semibold">
+            team@aphelion.com.mx
+          </p>
         </div>
-      </footer>
+      </div>
     </div>
   );
 }
