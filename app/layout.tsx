@@ -13,11 +13,15 @@ export const metadata: Metadata = {
     "process optimization",
     "Aphelion",
   ],
+  authors: [{ name: "Aphelion", url: "https://aphelion.com.mx" }],
+  alternates: {
+    canonical: "https://aphelion.com.mx/",
+  },
   openGraph: {
     title: "Aphelion - Industrial Visual Solutions",
     description:
       "We specialize in developing visual concepts that enable industrial companies to bring their ideas and products to life, transforming complex projects into clear, actionable solutions. Our approach optimizes technical and internal communication and creates a professional impact that facilitates investor attraction and enhances the value of each industrial proposal.",
-    url: "https://example.com/", // Reemplaza con tu dominio real
+    url: "https://aphelion.com.mx/",
     siteName: "Aphelion",
     images: [
       {

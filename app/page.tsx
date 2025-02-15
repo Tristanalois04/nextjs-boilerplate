@@ -1,6 +1,17 @@
+import { useEffect } from "react";
 import Image from "next/image";
 
 export default function Home() {
+  useEffect(() => {
+    const handleContextMenu = (e: MouseEvent) => {
+      e.preventDefault();
+    };
+    document.addEventListener("contextmenu", handleContextMenu);
+    return () => {
+      document.removeEventListener("contextmenu", handleContextMenu);
+    };
+  }, []);
+
   return (
     <div className="bg-black text-white min-h-screen">
       {/* Encabezado: Barra de navegación en negro con outline blanco sin texto */}
@@ -51,6 +62,7 @@ export default function Home() {
               SIMPLIFY COMMUNICATE AND <span className="text-[#FF6600]">IMPRESS</span>
             </h1>
           </div>
+
           {/* Columna derecha: texto descriptivo */}
           <div>
             <p className="text-lg sm:text-xl text-gray-300 leading-relaxed text-justify">
@@ -66,16 +78,30 @@ export default function Home() {
 
       {/* Sección de Servicios */}
       <section id="services" className="w-full max-w-6xl mt-24 px-4 mx-auto">
-        {/* Ícono convertido en botón, alineado a la izquierda y con mayor separación */}
-        <div className="mb-[4.5rem] text-left">
-          <a href="#services-grid">
-            <Image
-              src="/our services.svg"
-              alt="Our Services"
-              width={195}
-              height={65}
+        {/* Contenedor del ícono de "our services" y el formulario de contacto */}
+        <div className="flex justify-between items-center mb-[4.5rem]">
+          {/* Ícono convertido en botón, alineado a la izquierda */}
+          <div className="text-left">
+            <a href="#services-grid">
+              <Image
+                src="/our services.svg"
+                alt="Our Services"
+                width={195}
+                height={65}
+              />
+            </a>
+          </div>
+          {/* Formulario de contacto a la derecha */}
+          <div className="flex items-center space-x-4">
+            <input
+              type="text"
+              placeholder="Write your message..."
+              className="bg-black text-white px-4 py-2 outline outline-white"
             />
-          </a>
+            <button className="bg-white text-black px-4 py-2 rounded">
+              Contact Us
+            </button>
+          </div>
         </div>
 
         {/* Grid con 4 columnas */}
@@ -102,7 +128,7 @@ export default function Home() {
               BRAND DESIGN & DIGITAL CONTENT
             </h3>
             <p className="text-gray-300 leading-relaxed">
-              A strong visual identity and strategic content elevate brand presence, ensuring consistency and professionalism at every interaction.
+              A strong visual identity and strategic digital content elevate brand&#39;s presence in the market, ensuring consistency and professionalism at every interaction.
             </p>
           </div>
 
