@@ -1,5 +1,4 @@
 "use client";
-"use client";
 
 import { useEffect } from "react";
 import Image from "next/image";
@@ -68,7 +67,7 @@ export default function Home() {
               We specialize in developing visual concepts that enable industrial companies to bring their ideas and products to life, transforming complex projects into clear, actionable solutions.
             </p>
             <p className="text-lg sm:text-xl text-gray-300 leading-relaxed text-justify mt-4">
-              Our approach optimizes technical and internal communication and creates a professional impact that facilitates investor and client attraction and enhances each industrial proposal&#39;s value.
+              Our approach improves technical and internal communication, enhances brand presence, projects a professional image that attracts clients and investors, and increases the value of proposals.
             </p>
           </div>
         </div>
