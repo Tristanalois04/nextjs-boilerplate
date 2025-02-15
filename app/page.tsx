@@ -44,7 +44,12 @@ export default function Home() {
 
       {/* Video Section */}
       <section className="relative w-full h-[400px]">
-        <video autoPlay loop muted className="absolute inset-0 object-cover w-full h-full">
+        <video
+          autoPlay
+          loop
+          muted
+          className="absolute inset-0 object-cover w-full h-full"
+        >
           <source src="/dron.mp4" type="video/mp4" />
           Tu navegador no soporta el elemento de video.
         </video>
@@ -53,13 +58,14 @@ export default function Home() {
       {/* Hero Section */}
       <main className="max-w-6xl mx-auto mt-14 px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-          {/* Título */}
+          {/* Left: Title */}
           <div>
             <h1 className="text-5xl sm:text-6xl font-bold">
-              SIMPLIFY COMMUNICATE AND <span className="text-[#FF6600]">IMPRESS</span>
+              SIMPLIFY COMMUNICATE AND{" "}
+              <span className="text-[#FF6600]">IMPRESS</span>
             </h1>
           </div>
-          {/* Descripción */}
+          {/* Right: Description */}
           <div>
             <p className="text-lg sm:text-xl text-gray-300 leading-relaxed text-justify">
               <span className="text-[#FF6600]">{'<< '}</span>
@@ -74,32 +80,23 @@ export default function Home() {
 
       {/* Services Section */}
       <section id="services" className="w-full max-w-6xl mt-24 px-4 mx-auto">
-        {/* Container: "Our Services" icon and email */}
-        <div className="flex justify-between items-center mb-[4.5rem]">
-          {/* Icon as button */}
-          <div className="text-left">
-            <a href="#services-grid">
-              <Image
-                src="/our services.svg"
-                alt="Our Services"
-                width={195}
-                height={65}
-              />
-            </a>
-          </div>
-          {/* Email link */}
-          <div>
-            <a
-              href="mailto:team@aphelion.com.mx"
-              className="text-lg sm:text-xl text-gray-300 underline"
-            >
-              team@aphelion.com.mx
-            </a>
-          </div>
+        {/* Container: "Our Services" icon (left) */}
+        <div className="flex justify-start items-center mb-[4.5rem]">
+          <a href="#services-grid">
+            <Image
+              src="/our services.svg"
+              alt="Our Services"
+              width={195}
+              height={65}
+            />
+          </a>
         </div>
 
-        {/* Services Grid */}
-        <div id="services-grid" className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-left">
+        {/* Grid of Services */}
+        <div
+          id="services-grid"
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-left"
+        >
           {/* Service 1 */}
           <div>
             <h3
@@ -109,7 +106,8 @@ export default function Home() {
               3D MODELING & VIDEO PRODUCTION
             </h3>
             <p className="text-gray-300 leading-relaxed">
-              High-quality 3D animations bring industrial processes, product prototypes, and structures to life with precision and clarity.
+              High-quality 3D animations bring industrial processes, product
+              prototypes, and structures to life with precision and clarity.
             </p>
           </div>
           {/* Service 2 */}
@@ -133,7 +131,9 @@ export default function Home() {
               STRUCTURAL PREVIEWS & TECHNICAL ILLUSTRATIONS
             </h3>
             <p className="text-gray-300 leading-relaxed">
-              Advanced visual representations provide accurate structural insights, while technical illustrations simplify complex concepts for better understanding.
+              Advanced visual representations provide accurate structural insights,
+              while technical illustrations simplify complex concepts for better
+              understanding.
             </p>
           </div>
           {/* Service 4 */}
@@ -145,18 +145,25 @@ export default function Home() {
               TECHNICAL MATERIAL & DOCUMENTATION
             </h3>
             <p className="text-gray-300 leading-relaxed">
-              Clear, well-structured manuals, operational guides, and training materials optimize efficiency and knowledge retention.
+              Clear, well-structured manuals, operational guides, and training
+              materials optimize efficiency and knowledge retention.
             </p>
           </div>
         </div>
       </section>
 
-      {/* Footer with email in contact info */}
-      <footer className="mt-24 py-6 text-center text-gray-500 w-full">
-        © {new Date().getFullYear()} Aphelion. All rights reserved. Contact us at{" "}
-        <a href="mailto:team@aphelion.com.mx" className="underline text-gray-500">
-          team@aphelion.com.mx
-        </a>
+      {/* Footer */}
+      <footer className="mt-24 py-6 text-gray-500 w-full">
+        <div className="max-w-6xl mx-auto flex justify-between">
+          <div className="text-left">
+            © {new Date().getFullYear()}
+          </div>
+          <div className="text-right">
+            <a href="mailto:team@aphelion.com.mx" className="underline">
+              team@aphelion.com.mx
+            </a>
+          </div>
+        </div>
       </footer>
     </div>
   );
