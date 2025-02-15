@@ -45,12 +45,7 @@ export default function Home() {
 
       {/* Sección con video de fondo */}
       <section className="relative w-full h-[400px]">
-        <video
-          autoPlay
-          loop
-          muted
-          className="absolute inset-0 object-cover w-full h-full"
-        >
+        <video autoPlay loop muted className="absolute inset-0 object-cover w-full h-full">
           <source src="/dron.mp4" type="video/mp4" />
           Tu navegador no soporta el elemento de video.
         </video>
@@ -159,22 +154,19 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Barra inferior con imagen y texto en negro */}
-      <div className="relative mt-24">
-        <Image
-          src="/barra_inferior.svg"
-          alt="Barra Inferior"
-          className="w-full h-auto"
-        />
-        <div className="absolute inset-0 flex items-center justify-between px-4">
-          <p className="text-black font-semibold">
-            © {new Date().getFullYear()} Aphelion. All rights reserved.
-          </p>
-          <p className="text-black font-semibold">
-            team@aphelion.com.mx
-          </p>
+      {/* Footer */}
+      <footer className="mt-24 py-6 w-full">
+        <div className="max-w-6xl mx-auto flex justify-between px-4 text-white">
+          <div>
+            © {new Date().getFullYear()} Aphelion.
+          </div>
+          <div>
+            <a href="mailto:team@aphelion.com.mx" className="underline">
+              team@aphelion.com.mx
+            </a>
+          </div>
         </div>
-      </div>
+      </footer>
     </div>
   );
 }
