@@ -89,6 +89,17 @@ export default function Home() {
 
         {/* Grid de Servicios */}
         <div id="services-grid" className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-left">
+          <div>
+            <h3
+              className="text-xl font-bold mb-4 uppercase tracking-[0.06em]"
+              style={{ fontFamily: "Helvetica, sans-serif" }}
+            >
+              AUTOMATED PROCESS SOLUTIONS
+            </h3>
+            <p className="text-gray-300 leading-relaxed">
+              Smart bots that automate reporting, auditing, safety, and HR tasks by connecting to systems like SAP, Excel, and internal databases — saving time, reducing errors, and boosting efficiency.
+            </p>
+          </div>
           {/* Servicio 1 */}
           <div>
             <h3
