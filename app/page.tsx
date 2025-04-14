@@ -64,7 +64,7 @@ export default function Home() {
           <div>
             <p className="text-lg sm:text-xl text-gray-300 leading-relaxed text-justify">
               <span className="text-[#FF6600]">{'<< '}</span>
-              We specialize in developing visual concepts that enable industrial companies to bring their ideas and products to life, transforming complex projects into clear, actionable solutions.
+              We optimize industrial companies through visual concepts and technologies that bring ideas and products to life—turning complex projects into clear, actionable solutions.
             </p>
             <p className="text-lg sm:text-xl text-gray-300 leading-relaxed text-justify mt-4">
               Our approach improves technical and internal communication, enhances brand presence, projects a professional image that attracts clients and investors, and increases the value of proposals.
