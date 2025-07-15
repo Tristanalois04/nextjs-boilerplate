@@ -51,6 +51,21 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+        <link
+          rel="preload"
+          href="/fonts/Orbitron-Regular.woff2"
+          as="font"
+          type="font/woff2"
+          crossOrigin="anonymous"
+        />
+        <link
+          rel="preload"
+          href="/dron.mp4"
+          as="video"
+          type="video/mp4"
+        />
+      </head>
       <body>{children}</body>
     </html>
   );
